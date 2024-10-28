@@ -1,0 +1,147 @@
+/* Base Styles */
+.container {
+  text-align: justify;
+  padding: 20px;
+  background-color: #dd63a3;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-family: "Space Grotesk";
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  line-height: 150%;
+}
+
+.home_card {
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+  text-align: center;
+  margin: 5%;
+}
+
+h1:hover {
+  animation: glitch .3s linear infinite;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.Aron {
+  font-family: "Tiny5";
+  color: aqua;
+  text-align: center;
+  font-size: 300%;
+}
+
+.Mynd {
+  display: block;
+  margin: 0 auto;
+  border-radius: 35%;
+  width: 200px;
+  height: 200px;
+}
+
+.headweb {
+  font-family: "Space Grotesk";
+  color: #ffffff;
+  font-size: 130%;
+}
+
+.info {
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(#dd63a3, rgba(212, 14, 14, 0.3));
+}
+
+.list {
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  color: aqua;
+  display: flex;
+}
+
+.contact {
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+  text-align: center;
+  margin: 5%;
+  background: linear-gradient(#dd63a3, rgba(0, 255, 255, 0.3));
+}
+
+/* Media Queries */
+
+/* Medium Screens (less than 960px) */
+@media (max-width: 960px) {
+  .container {
+    max-width: 700px;
+    padding: 15px;
+  }
+  .Mynd {
+    width: 180px;
+    height: 180px;
+  }
+  .Aron {
+    font-size: 250%;
+  }
+}
+
+/* Small Screens (less than 720px) */
+@media (max-width: 720px) {
+  .container {
+    max-width: 500px;
+    padding: 10px;
+  }
+  .Mynd {
+    width: 150px;
+    height: 150px;
+  }
+  .Aron {
+    font-size: 200%;
+  }
+}
+
+/* Extra Small Screens (less than 540px) */
+@media (max-width: 540px) {
+  .container {
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .Mynd {
+    width: 120px;
+    height: 120px;
+  }
+  .Aron {
+    font-size: 180%;
+  }
+  .headweb {
+    font-size: 100%;
+  }
+  .info {
+    font-size: 90%;
+  }
+  .list {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
